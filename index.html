@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Calculadora de Topografia</title>
+		<link rel="shortcut icon" type="image" href="images/calculator.png" />
+
+		<meta
+			name="description"
+			content="Uma calculadora de topografia simples para calcular as cotas de um terreno."
+		/>
+		<link
+			rel="icon"
+			href="https://www.example.com/favicon.ico"
+			type="image/x-icon"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		/>
+		<link rel="stylesheet" href="estilo.css" />
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<script src="topografia.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<h2>Calculadora de Topografia</h2>
+			<form>
+				<div class="form-group">
+					<label for="visada_re">Visada Ré:</label>
+					<input
+						type="number"
+						class="form-control"
+						id="visada_re"
+						placeholder="Visada Ré"
+					/>
+				</div>
+				<div class="form-group">
+					<label for="leituras">Leituras:</label>
+					<input
+						type="text"
+						class="form-control"
+						id="leituras"
+						placeholder="Leituras separadas por espaço"
+					/>
+				</div>
+				<button type="button" class="btn btn-primary" onclick="calcular()">
+					Calcular
+				</button>
+			</form>
+			<br />
+			<div class="form-group">
+				<label for="resultados">Resultados das Cotas:</label>
+				<p id="resultados"></p>
+			</div>
+		</div>
+	</body>
+</html>
